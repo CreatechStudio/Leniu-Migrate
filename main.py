@@ -53,7 +53,6 @@ class Main():
             self.driver.find_element(By.CSS_SELECTOR, ".el-col:nth-child(1) .el-form-item__content > .el-input > .el-input__inner").clear()
             self.driver.find_element(By.CSS_SELECTOR, ".el-col:nth-child(1) .el-form-item__content > .el-input > .el-input__inner").send_keys(stu_id)
             self.driver.find_element(By.CSS_SELECTOR, ".el-button--success:nth-child(2) > span").click()
-            # self.driver.find_element(By.CSS_SELECTOR, ".el-table__fixed-right .el-button:nth-child(3) > span").click()
             click_editor = self.driver.find_element(By.XPATH, "/html/body/div/div/div[2]/div[2]/section/div/section/main/div[1]/div[1]/div[5]/div[2]/table/tbody/tr/td[23]/div/button[3]/span")
             self.driver.execute_script("arguments[0].click();", click_editor)
             self.driver.find_element(By.CSS_SELECTOR, ".is-required .el-cascader .el-input__inner").click()
